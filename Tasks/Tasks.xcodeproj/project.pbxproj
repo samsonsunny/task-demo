@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22D439AD24B6358C00378B83 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D439AB24B6358C00378B83 /* common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22D439B024B6358C00378B83 /* common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D439A924B6358C00378B83 /* common.framework */; };
-		22D439B124B6358C00378B83 /* common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22D439A924B6358C00378B83 /* common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		22D439B624B6360E00378B83 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D439B524B6360E00378B83 /* Media.xcassets */; };
 		22E102D724B61CB000FDEDE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E102D624B61CB000FDEDE6 /* AppDelegate.swift */; };
 		22E102D924B61CB000FDEDE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E102D824B61CB000FDEDE6 /* SceneDelegate.swift */; };
 		22E102DB24B61CB000FDEDE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E102DA24B61CB000FDEDE6 /* ViewController.swift */; };
@@ -28,13 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22D439AE24B6358C00378B83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22E102CB24B61CB000FDEDE6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22D439A824B6358C00378B83;
-			remoteInfo = common;
-		};
 		22E102F924B61EA300FDEDE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22E102CB24B61CB000FDEDE6 /* Project object */;
@@ -70,7 +59,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				22E1030D24B6207300FDEDE6 /* TaskFramework.framework in Embed Frameworks */,
-				22D439B124B6358C00378B83 /* common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,13 +68,6 @@
 /* Begin PBXFileReference section */
 		22D4398F24B6289800378B83 /* Tasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasks.entitlements; sourceTree = "<group>"; };
 		22D4399024B62E0C00378B83 /* Today Tasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Today Tasks.entitlements"; sourceTree = "<group>"; };
-		22D4399824B6348800378B83 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		22D4399B24B6348800378B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		22D4399D24B6348800378B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22D439A924B6358C00378B83 /* common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22D439AB24B6358C00378B83 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		22D439AC24B6358C00378B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22D439B524B6360E00378B83 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		22E102D324B61CB000FDEDE6 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E102D624B61CB000FDEDE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E102D824B61CB000FDEDE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,19 +88,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		22D439A624B6358C00378B83 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22E102D024B61CB000FDEDE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				22E1030C24B6207300FDEDE6 /* TaskFramework.framework in Frameworks */,
-				22D439B024B6358C00378B83 /* common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,33 +114,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22D4399724B6348800378B83 /* Exten */ = {
-			isa = PBXGroup;
-			children = (
-				22D4399824B6348800378B83 /* TodayViewController.swift */,
-				22D4399A24B6348800378B83 /* MainInterface.storyboard */,
-				22D4399D24B6348800378B83 /* Info.plist */,
-			);
-			path = Exten;
-			sourceTree = "<group>";
-		};
-		22D439AA24B6358C00378B83 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				22D439AB24B6358C00378B83 /* common.h */,
-				22D439AC24B6358C00378B83 /* Info.plist */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
 		22E102CA24B61CB000FDEDE6 = {
 			isa = PBXGroup;
 			children = (
 				22E102D524B61CB000FDEDE6 /* Tasks */,
 				22E102F224B61EA300FDEDE6 /* Today Tasks */,
 				22E1030624B6207300FDEDE6 /* TaskFramework */,
-				22D4399724B6348800378B83 /* Exten */,
-				22D439AA24B6358C00378B83 /* common */,
 				22E102EF24B61EA300FDEDE6 /* Frameworks */,
 				22E102D424B61CB000FDEDE6 /* Products */,
 			);
@@ -179,7 +131,6 @@
 				22E102D324B61CB000FDEDE6 /* Tasks.app */,
 				22E102EE24B61EA300FDEDE6 /* Today Tasks.appex */,
 				22E1030524B6207300FDEDE6 /* TaskFramework.framework */,
-				22D439A924B6358C00378B83 /* common.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,7 +175,6 @@
 				22E1030724B6207300FDEDE6 /* TaskFramework.h */,
 				22E1030824B6207300FDEDE6 /* Info.plist */,
 				22E1031224B6208100FDEDE6 /* Task.swift */,
-				22D439B524B6360E00378B83 /* Media.xcassets */,
 			);
 			path = TaskFramework;
 			sourceTree = "<group>";
@@ -232,14 +182,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		22D439A424B6358C00378B83 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22D439AD24B6358C00378B83 /* common.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22E1030024B6207300FDEDE6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,24 +193,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		22D439A824B6358C00378B83 /* common */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22D439B224B6358C00378B83 /* Build configuration list for PBXNativeTarget "common" */;
-			buildPhases = (
-				22D439A424B6358C00378B83 /* Headers */,
-				22D439A524B6358C00378B83 /* Sources */,
-				22D439A624B6358C00378B83 /* Frameworks */,
-				22D439A724B6358C00378B83 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = common;
-			productName = common;
-			productReference = 22D439A924B6358C00378B83 /* common.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		22E102D224B61CB000FDEDE6 /* Tasks */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E102E724B61CB300FDEDE6 /* Build configuration list for PBXNativeTarget "Tasks" */;
@@ -284,7 +208,6 @@
 			dependencies = (
 				22E102FA24B61EA300FDEDE6 /* PBXTargetDependency */,
 				22E1030B24B6207300FDEDE6 /* PBXTargetDependency */,
-				22D439AF24B6358C00378B83 /* PBXTargetDependency */,
 			);
 			name = Tasks;
 			productName = Tasks;
@@ -336,9 +259,6 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = samson;
 				TargetAttributes = {
-					22D439A824B6358C00378B83 = {
-						CreatedOnToolsVersion = 11.3.1;
-					};
 					22E102D224B61CB000FDEDE6 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -367,19 +287,11 @@
 				22E102D224B61CB000FDEDE6 /* Tasks */,
 				22E102ED24B61EA300FDEDE6 /* Today Tasks */,
 				22E1030424B6207300FDEDE6 /* TaskFramework */,
-				22D439A824B6358C00378B83 /* common */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		22D439A724B6358C00378B83 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22E102D124B61CB000FDEDE6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,20 +314,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D439B624B6360E00378B83 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22D439A524B6358C00378B83 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		22E102CF24B61CB000FDEDE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,11 +349,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		22D439AF24B6358C00378B83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22D439A824B6358C00378B83 /* common */;
-			targetProxy = 22D439AE24B6358C00378B83 /* PBXContainerItemProxy */;
-		};
 		22E102FA24B61EA300FDEDE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22E102ED24B61EA300FDEDE6 /* Today Tasks */;
@@ -463,14 +362,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22D4399A24B6348800378B83 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22D4399B24B6348800378B83 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
 		22E102DC24B61CB000FDEDE6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,60 +389,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		22D439B324B6358C00378B83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = YS8G3L23A7;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = common/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sam.app.common;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		22D439B424B6358C00378B83 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = YS8G3L23A7;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = common/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sam.app.common;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		22E102E524B61CB300FDEDE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -806,15 +643,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22D439B224B6358C00378B83 /* Build configuration list for PBXNativeTarget "common" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22D439B324B6358C00378B83 /* Debug */,
-				22D439B424B6358C00378B83 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		22E102CE24B61CB000FDEDE6 /* Build configuration list for PBXProject "Tasks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
