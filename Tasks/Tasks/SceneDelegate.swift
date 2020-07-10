@@ -46,8 +46,85 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// Called as the scene transitions from the foreground to the background.
 		// Use this method to save data, release shared resources, and store enough scene-specific state information
 		// to restore the scene back to its current state.
+		
+		
+		// Step 1
+		let content = UNMutableNotificationContent()
+		content.title = NSString.localizedUserNotificationString(forKey: "Hi!", arguments: nil)
+		content.body = NSString.localizedUserNotificationString(forKey: "You entered background", arguments: nil)
+		content.sound = UNNotificationSound.default
+		content.badge = 1
+		
+		// Step 2
+		let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+		
+//		var date = DateComponents()
+//		date.hour = 22
+//		date.minute = 11
+//		let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
+		
+		// Step 3
+		let request = UNNotificationRequest(identifier: "first-id", content: content, trigger: trigger) // Schedule the notification.
+		
+		// Step 4
+		
+		let center = UNUserNotificationCenter.current()
+		center.add(request) { (error : Error?) in
+			 if let theError = error {
+				 // Handle any errors
+			 }
+		}
+		
 	}
-
-
 }
 
+/*
+
+let center = UNUserNotificationCenter.current()
+		center.getNotificationSettings { settings in
+			guard (settings.authorizationStatus == .authorized) ||
+				  (settings.authorizationStatus == .provisional) else { return }
+
+			if settings.alertSetting == .enabled {
+				// Schedule an alert-only notification.
+			} else {
+				// Schedule a notification with a badge and sound.
+			}
+			
+			
+		}
+		
+		// Configure the notification's payload.
+		let content = UNMutableNotificationContent()
+		content.title = NSString.localizedUserNotificationString(forKey: "Hello!", arguments: nil)
+		content.body = NSString.localizedUserNotificationString(forKey: "Hello_message_body", arguments: nil)
+		content.sound = UNNotificationSound.default
+		content.badge = 3
+		 
+		// Deliver the notification in five seconds.
+		let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+		let request = UNNotificationRequest(identifier: "FiveSecond", content: content, trigger: trigger) // Schedule the notification.
+//		let center = UNUserNotificationCenter.current()
+		center.add(request) { (error : Error?) in
+			 if let theError = error {
+				 // Handle any errors
+			 }
+		}
+		
+		var date = DateComponents()
+		date.hour = 21
+		date.minute = 0
+		// Configure the notification's payload.
+		let content2 = UNMutableNotificationContent()
+		content2.title = NSString.localizedUserNotificationString(forKey: "Hey!", arguments: nil)
+		content2.body = NSString.localizedUserNotificationString(forKey: "Go for dinner", arguments: nil)
+		content2.sound = UNNotificationSound.default
+		content2.badge = 0
+		 
+		let trigger2 = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+		let request2 = UNNotificationRequest(identifier: "alarm", content: content2, trigger: trigger2)
+		center.add(request2) { (err) in
+			
+		}
+		
+*/
